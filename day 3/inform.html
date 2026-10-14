@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Personal Information</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        form {
+            width: 500px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-transform: lowercase;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>User Personal Information</h1>
+
+    <form action="" method="post">
+
+        <label for="name">Enter your full name:</label>
+        <input type="text" id="name" name="name"
+               placeholder="full name" required>
+        <br>
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="email" required>
+        <br>
+
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="password" required>
+        <br>
+
+        <label for="confirm">Confirm your password:</label>
+        <input type="password" id="confirm" name="confirm"
+               placeholder="confirm password" required>
+        <br>
+
+        <label>Enter your gender:</label>
+        <br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="others" name="gender" value="Others">
+        <label for="others">Others</label>
+        <br>
+
+        <label for="dob">Enter your date of birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <label for="address">Enter your address:</label>
+        <textarea id="address" name="address"
+                  placeholder="Enter your address"
+                  rows="3" cols="40"></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

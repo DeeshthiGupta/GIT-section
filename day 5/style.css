@@ -1,0 +1,40 @@
+*{
+    background-color: black;
+    color: aliceblue;
+}
+#box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+}
+.box{
+    
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+}
+#mainbox{
+    display:flex;
+    gap: 10px;
+  /*  justify-content: center;
+    align-items: center;*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box-1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+mainbox1{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
